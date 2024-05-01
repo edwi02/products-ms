@@ -1,4 +1,4 @@
-# Prouct Microservice
+# Product Microservice
 
 ## Dev
 1. Clone repository
