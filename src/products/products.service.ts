@@ -75,12 +75,12 @@ export class ProductsService extends PrismaClient implements OnModuleInit {
   }
 
   async validateProduct(ids: number[]) {
-    
     ids = Array.from(new Set(ids));
 
     const products = await this.product.findMany({
-      where: { id: { in: ids }
-      // , avaible: true 
+      where: {
+        id: { in: ids },
+        // , avaible: true
       },
     });
 
